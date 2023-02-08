@@ -1,4 +1,6 @@
-# encapsulation-python
+# Encapsulation in Python
+
+Encapsulation (data-hiding) allows to conceal the actual implementation details. This is required to restrict the date from being modified, as data is a crucial part. Data should be prevented from the outside unauthorized access, that's when <code>private</code> access specifiers are used with data. In case I need to access any <code>private</code> data, I should be able to access it with the help of the <code>public</code> functions. 
 
 Create a Python file called <code>access_modifiers.py</code>:
 

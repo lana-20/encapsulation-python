@@ -61,7 +61,7 @@ The same case applies to the functions created inside the <code>Car</code> class
     car._Car__privateMetjod()
     #   Output:  Calling private method
     
-    
+∴ Encapsulation / data-hiding in Python is implemented via three access specifiers - <code>public</code>, <code>protected</code>, and <code>private</code>.
 
 
 

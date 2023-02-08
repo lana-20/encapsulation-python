@@ -7,4 +7,4 @@ print(car.__privateVar)
 
 car.publicMethod()
 car._protectedMethod()
-car.__privateMetjod()
+car.__privateMethod()

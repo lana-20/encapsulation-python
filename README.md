@@ -21,7 +21,7 @@ Create a Python file called <code>access_modifiers.py</code>:
       def __privateMethod(self):
         print("Calling private method")
     
-To call the class, create an object of this class in a separate file <code>transport.py</code>:
+To call the class, create an ￼ object of this class in a separate file <code>transport.py</code>:
 
     from access_specifiers import Car
 

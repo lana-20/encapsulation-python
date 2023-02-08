@@ -1,6 +1,6 @@
 # encapsulation-python
 
-Create a Python file called access_modifiers.py:
+Create a Python file called <code>access_modifiers.py</code>:
 
     class Car:
       publicVar = 9
@@ -19,7 +19,7 @@ Create a Python file called access_modifiers.py:
       def __privateMethod(self):
         print("Calling private method")
     
-To call the class, create an object of this class in a separate file transport.py:
+To call the class, create an object of this class in a separate file <code>transport.py</code>:
 
     from access_specifiers import Car
 
@@ -30,12 +30,14 @@ Can access the public variable outside of the class scope.
     print(car.publicVar)
     #   Output: Inside Car constructor 9
 
-Python suggests not to access a protected variable by convention, but doesn't restrict it. _protectedVar can ne manually written in and accessed. To follow the proper coding convention/standards, the _protectedVar member shouldn't be accessed outside of the class scope. One can say that the <code>protected</code> access specifier doesn't really exist in Python, as it's not strictly enforced. 
+Python suggests not to access a <code>protected</code> variable by convention, but doesn't restrict it. <code>_protectedVar</code> can ne manually written in and accessed. To follow the proper coding convention/standards, the <code>_protectedVar</code> member shouldn't be accessed outside of the class scope. One can say that the <code>protected</code> access specifier doesn't really exist in Python, as it's not strictly enforced. 
 
     print(car._protectedVar)
     #   Output: 10
 
-    print(car.__privateVar) #
+With the <code>private</code> specifier, again, Python does not recommend using it. When manually writing <code>__privateVar</code> in and executing the code, Python throws an error <code>AttributeError: 'Car' object has no attribute '__privateVar'</code>.
+    
+    print(car.__privateVar)
 
     car.publicMethod()
     car._protectedMethod()
